@@ -1,0 +1,15 @@
+﻿@model MenuModel
+@using Nop.Web.Models.Common;
+<ul class="top-menu">
+    @Html.Widget("header_menu_before")
+    <li><a href="@Url.RouteUrl("HomePage")">Home Page</a></li>
+    <li>|</li>
+    <li><a href="@Url.RouteUrl("AboutUs")">About Us</a></li>
+    <li>|</li>
+    <li><a href="@Url.RouteUrl("AboutExtended")">About Bahá’í Faith</a></li>
+    <li>|</li>
+    <li><a href="@Url.RouteUrl("Reviews")">Reviews</a></li>
+    <li>|</li>
+    <li><a href="@Url.RouteUrl("ContactUs")">Contact Us</a></li>
+    @Html.Widget("header_menu_after")
+</ul>

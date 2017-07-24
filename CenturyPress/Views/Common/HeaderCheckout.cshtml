@@ -1,0 +1,7 @@
+﻿@model HeaderLinksModel
+@using Nop.Web.Models.Common;
+<div class="header-cart">
+	@Html.Action("SearchBoxLong", "Catalog")
+    <a href="@Url.RouteUrl("ShoppingCart")" class="button-basket">&nbsp;</a>
+    <a href="@Url.RouteUrl("ShoppingCart")">@Model.ShoppingCartItems</a>
+</div>
